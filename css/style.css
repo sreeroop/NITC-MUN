@@ -9,6 +9,10 @@
 body {
   font-family: sans-serif;
 }
+
+/*------------------------------ particle animation  ------------------------------*/
+
+
 #particles-js {
   position: absolute;
   top: 0;
@@ -20,29 +24,11 @@ body {
   background-position: 50% 50%;
   z-index: -1;
 }
-header {
-  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
 
-  position: sticky;
 
-  top: 0px;
+/*------------------------------ 1st nav bar ------------------------------*/
 
-  background-color: white;
-}
 
-nav {
-  min-height: 10vh;
-
-  display: flex;
-
-  align-items: center;
-
-  justify-content: space-between;
-
-  margin: auto;
-
-  width: 90%;
-}
 
 .header {
   position: sticky;
@@ -106,55 +92,6 @@ nav {
   color: #cbe2f4;
   font-size: 21px;
 }
-
-.landing {
-  height: 100vh;
-
-  display: flex;
-
-  justify-content: center;
-
-  align-items: center;
-}
-
-.landing h1 {
-  margin: 100px;
-
-  font-family: 'Poppins', sans-serif;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-
-
-  font-size: 50px;
-
-  color: #ae5fce;
-}
-.main-logos{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.MUNlogo{
-  align-items: center;
-  text-align: center;
-  width: 250px;
-  height: auto;
-  padding: 50px;
-}
-.landing-img {
-  align-items: flex-end;
-  text-align: center;
-  width: 80%;
-  height: 20vh;
-}
-
-.landing-img path{
-  stroke-dasharray: 160;
-  stroke-dashoffset: 123;
-}
-
 @media screen and (max-width: 768px) {
 
   .nav {
@@ -166,7 +103,7 @@ nav {
   .nav-links {
     position: fixed;
 
-    background: #154973;
+    background: rgba(21, 73, 115, 0.6);
 
     height: 100vh;
 
@@ -250,6 +187,85 @@ nav {
   }
 }
 
+/*-------------------- main page section where logo comes -----------------------*/
+
+
+.landing {
+  height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+
+.landing h1 {
+  margin: 100px;
+
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+
+  font-size: 50px;
+
+  color: #ae5fce;
+}
+.main-logos{
+}
+.MUNlogo{
+  align-items: center;
+  text-align: center;
+  width: 400px;
+  height: auto;
+  padding: 50px;
+}
+.nitclogo{
+  position: absolute;
+  top: 10%;
+  right: 10%;
+  width:100px;
+  height: 100px;
+}
+.ipflogo{
+  position: absolute;
+  top: 10%;
+  left: 10%;
+  width:100px;
+  height: 100px;
+}
+
+
+
+
+/*-------------------- 2nd nav bar -----------------------*/
+
+
+
+header {
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
+
+  position: sticky;
+
+  top: 0px;
+
+  background-color: white;
+}
+
+nav {
+  min-height: 10vh;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: space-between;
+
+  margin: auto;
+
+  width: 90%;
+}
+
 nav ul {
   font-size: 1.5rem;
 
@@ -271,6 +287,9 @@ nav a {
 
   text-decoration: none;
 }
+
+/*-------------------- what why who section and bg part -----------------------*/
+
 
 section {
   min-height: 100vh;
@@ -319,13 +338,17 @@ section h2 {
     transform: scale(1.5);
   }
 }
+
+
+/*-------------------- social media links -----------------------*/
+
 .connect {
   position: fixed;
   left: 0;
   top: 200px;
   width: 70px;
   height: 300px;
-  background-color: #cbe2f4;
+  background-color:rgba(203, 226, 244, 0.6);
   box-shadow: 1px 1px 1px 1px;
   border-radius: 0 12px 12px 0;
   transform: translate(-90%);
@@ -344,7 +367,6 @@ section h2 {
 }
 .connect:hover {
   transform: translate(0%);
-  background-color: #154873;
 }
 @media screen and (max-width: 1000px) {
   .connect {
@@ -353,7 +375,7 @@ section h2 {
     top: 200px;
     width: 55px;
     height: 300px;
-    background-color: #cbe2f4;
+    background-color: rgba(203, 226, 244, 0.6);
     border-radius: 0 12px 12px 0;
     transform: translate(-90%);
     z-index: 4;
@@ -372,6 +394,9 @@ section h2 {
   }
 }
 
+/*-------------------- social media icons -----------------------*/
+
+
 .fa {
   padding-top: 35px;
   padding-left: 15px;
@@ -384,6 +409,7 @@ section h2 {
 .fa:hover {
   opacity: 1;
   transform: scale(1.2);
+  color: #0693ff;
 }
 
 .fa-facebook {
@@ -405,6 +431,10 @@ section h2 {
   background: transparent;
   color: white;
 }
+
+/*-------------------- what why when conetent part -----------------------*/
+
+
 .main-pageContent {
   display: flex;
   flex-direction: column;
@@ -431,6 +461,12 @@ section h2 {
 .main-pageContent p::first-letter {
   font-size: 1.7rem;
   font-weight: 900;
+  transition: firstLetter 5s ease-in;
+}
+@keyframes firstLetter{
+  from{
+    clip-path:0;
+  }
 }
 @media screen and (max-width: 1000px) {
   .main-pageContent h2 {
@@ -444,6 +480,9 @@ section h2 {
     line-height: 1.3;
   }
 }
+
+/*-------------------- footer -----------------------*/
+
 footer {
   align-items: center;
   background-color: #cbe2f4;
@@ -458,4 +497,131 @@ footer p {
   footer p {
   font-size: 1.3rem;
 }
+}
+
+/*-------------------- loading page -----------------------*/
+
+.loader-wrapper{
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: grey;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+
+#logo {
+
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  animation: fill 0.5s ease forwards 3.5s;
+
+}
+
+#logo path{
+}
+
+#logo path:nth-child(1) {
+
+  stroke-dasharray: 604.4829711914062px;
+
+  stroke-dashoffset: 604.4829711914062px;
+
+  animation: line-anim 2s ease forwards;
+
+}
+
+#logo path:nth-child(2) {
+
+  stroke-dasharray: 226.94400024414062px;
+
+  stroke-dashoffset: 226.94400024414062px;
+
+  animation: line-anim 3s ease forwards 0.3s;
+
+}
+
+#logo path:nth-child(3) {
+
+  stroke-dasharray: 336.6719970703125px;
+
+  stroke-dashoffset: 336.6719970703125px;
+
+  animation: line-anim 3s ease forwards 0.6s;
+
+}
+
+#logo path:nth-child(4) {
+
+  stroke-dasharray: 508.5517272949219px;
+
+  stroke-dashoffset: 508.5517272949219px;
+
+  animation: line-anim 3s ease forwards 0.9s;
+
+}
+
+#logo path:nth-child(5) {
+
+  stroke-dasharray: 754.9266357421875px;
+
+  stroke-dashoffset: 754.9266357421875px;
+
+  animation: line-anim 3s ease forwards 1.2s;
+
+}
+
+#logo path:nth-child(6) {
+
+  stroke-dasharray: 483.892822265625px;
+
+  stroke-dashoffset: 483.892822265625px;
+
+  animation: line-anim 3s ease forwards 1.5s;
+
+}
+
+#logo path:nth-child(7) {
+
+  stroke-dasharray: 604.4829711914062px;
+
+  stroke-dashoffset: 604.4829711914062px;
+
+  animation: line-anim 3s ease forwards 1.8s;
+
+}
+
+ 
+
+@keyframes line-anim {
+
+  to {
+
+    stroke-dashoffset: 0;
+
+  }
+
+}
+
+@keyframes fill {
+
+  from {
+
+    fill: transparent;
+
+  }
+
+  to {
+
+    fill: white;
+
+  }
+
 }

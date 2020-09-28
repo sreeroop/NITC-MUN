@@ -72,3 +72,12 @@ function navCheck(entries) {
 sections.forEach((section) => {
   observer.observe(section);
 });
+/*
+$(window).on("load", function () {
+  $(".loader-wrapper").fadeOut("slow");
+});
+*/
+setTimeout(function () {
+  $(".loader-wrapper").fadeOut();
+  $("#logo").delay(150).fadeOut("slow");
+}, 8000);
