@@ -1,6 +1,3 @@
-
-
-
 const hamburger = document.querySelector(".hamburger");
 
 const navLinks = document.querySelector(".nav-links");
@@ -10,12 +7,12 @@ const links = document.querySelectorAll(".nav-links li");
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("open");
 
-  links.forEach((links) => {
-    links.classList.toggle("fade");
-    
-  });
-});
+  navLinks.style.setProperty("overflow", `${hidden}`);
 
+  /* links.forEach((links) => {
+    links.classList.toggle("fade");
+  }); */
+});
 
 const sections = document.querySelectorAll("section");
 
@@ -36,7 +33,7 @@ const options = {
 let observer = new IntersectionObserver(navCheck, options);
 
 function navCheck(entries) {
-  entries.forEach(entry => {
+  entries.forEach((entry) => {
     const className = entry.target.className;
 
     var activeAnchor = document.querySelector(`[data-page=${className}]`);
@@ -72,11 +69,6 @@ function navCheck(entries) {
 sections.forEach((section) => {
   observer.observe(section);
 });
-/*
-$(window).on("load", function () {
-  $(".loader-wrapper").fadeOut("slow");
-});
-*/
 setTimeout(function () {
   $(".loader-wrapper").fadeOut();
   $("#logo").delay(150).fadeOut("slow");

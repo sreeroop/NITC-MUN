@@ -12,7 +12,6 @@ body {
 
 /*------------------------------ particle animation  ------------------------------*/
 
-
 #particles-js {
   position: absolute;
   top: 0;
@@ -22,16 +21,12 @@ body {
   background-image: url("");
   background-size: cover;
   background-position: 50% 50%;
-  z-index: -1;
+  z-index: -2;
 }
-
 
 /*------------------------------ 1st nav bar ------------------------------*/
 
-
-
 .header {
-  position: sticky;
 }
 
 .nav {
@@ -47,7 +42,7 @@ body {
 }
 
 .nav h1 {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 
   margin-left: 5px;
 
@@ -62,6 +57,8 @@ body {
   top: 50%;
 
   transform: translate(-5%, -50%);
+
+  z-index: 3;
 }
 
 .nav-links {
@@ -82,7 +79,7 @@ body {
 
 .nav-links li a {
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 800;
   text-decoration: none;
 
@@ -92,18 +89,20 @@ body {
   color: #cbe2f4;
   font-size: 21px;
 }
+a span {
+  display: none;
+}
 @media screen and (max-width: 768px) {
-
   .nav {
     position: relative;
     align-items: center;
+    overflow: hidden;
   }
-
 
   .nav-links {
     position: fixed;
 
-    background: rgba(21, 73, 115, 0.6);
+    background: rgba(21, 73, 115, 1);
 
     height: 100vh;
 
@@ -118,6 +117,7 @@ body {
     transition: all 1s ease-out;
 
     pointer-events: none;
+    z-index: 2;
   }
 
   .nav-links.open {
@@ -126,12 +126,14 @@ body {
     -webkit-clip-path: circle(1000px at 90% -10%);
 
     pointer-events: all;
+
+    overflow: hidden;
   }
 
   .landing {
     flex-direction: column;
   }
-  
+
   .hamburger {
     position: absolute;
 
@@ -143,7 +145,7 @@ body {
 
     transform: translate(-5%, -50%);
 
-    z-index: 2;
+    z-index: 3;
   }
   .line {
     width: 30px;
@@ -156,39 +158,88 @@ body {
   }
 
   .nav-links li {
-    opacity: 0;
+    list-style: none;
+
+    padding: 0 30px;
+
+    font-size: 4em;
+
+    overflow: hidden;
   }
 
   .nav-links li a {
+    position: relative;
 
-  font-family: 'Poppins', sans-serif;
+    color: rgba(255, 255, 255, 0.1);
 
-    font-size: 25px;
+    text-decoration: none;
 
-    text-shadow: 3px 5px black;
+    font-weight: 700;
   }
 
-  .nav-links li:nth-child(1) {
-    transition: all 0.5s ease 0.2s;
+  .nav-links:hover li a:before {
+    animation: animate 1s steps(8) forwards;
   }
 
-  .nav-links li:nth-child(2) {
-    transition: all 0.5s ease 0.4s;
+  @keyframes animate {
+    0% {
+      width: 281.5px;
+    }
+
+    100% {
+      width: 0px;
+    }
   }
 
-  .nav-links li:nth-child(3) {
-    transition: all 0.5s ease 0.6s;
+  .nav-links li a:before {
+    content: attr(data-text);
+
+    position: absolute;
+    top: 0;
+
+    left: 13px;
+
+    overflow-y: hidden;
+
+    color: #1bfaad;
+
+    white-space: nowrap;
+
+    overflow: hidden;
   }
-  .nav-links li:nth-child(4) {
-    transition: all 0.5s ease 0.6s;
+
+  .nav-links li:hover span {
+    color: #ef0448;
   }
-  li.fade {
-    opacity: 1;
+
+  li a span {
+    position: relative;
+
+    top: -2px;
+
+    left: -10px;
+
+    color: transparent;
+
+    display: initial;
+  }
+
+  .nav-links li:hover a:before {
+    animation: animateTwo 1s steps(8) forwards;
+  }
+
+  @keyframes animateTwo {
+    0% {
+      width: 0px;
+    }
+
+    100% {
+      width: 281.5px;
+    }
   }
 }
 
 /*-------------------- main page section where logo comes -----------------------*/
-
 
 .landing {
   height: 100vh;
@@ -200,26 +251,25 @@ body {
 .landing h1 {
   margin: 100px;
 
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 
-
   font-size: 50px;
 
   color: #ae5fce;
 }
-.main-logos{
-}
-.MUNlogo{
+.MUNlogo {
   align-items: center;
   text-align: center;
   width: 400px;
   height: auto;
   padding: 50px;
+  z-index: -1;
 }
+/*
 .nitclogo{
   position: absolute;
   top: 10%;
@@ -240,8 +290,6 @@ body {
 
 /*-------------------- 2nd nav bar -----------------------*/
 
-
-
 header {
   box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.3);
 
@@ -250,6 +298,7 @@ header {
   top: 0px;
 
   background-color: white;
+  z-index: 1;
 }
 
 nav {
@@ -283,13 +332,12 @@ nav ul {
 nav a {
   color: black;
 
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 
   text-decoration: none;
 }
 
 /*-------------------- what why who section and bg part -----------------------*/
-
 
 section {
   min-height: 100vh;
@@ -306,8 +354,7 @@ section h2 {
 
   color: black;
 
-  font-family: 'Poppins', sans-serif;
-
+  font-family: "Poppins", sans-serif;
 }
 
 .what {
@@ -339,7 +386,6 @@ section h2 {
   }
 }
 
-
 /*-------------------- social media links -----------------------*/
 
 .connect {
@@ -348,7 +394,7 @@ section h2 {
   top: 200px;
   width: 70px;
   height: 300px;
-  background-color:rgba(203, 226, 244, 0.6);
+  background-color: rgba(203, 226, 244, 0.6);
   box-shadow: 1px 1px 1px 1px;
   border-radius: 0 12px 12px 0;
   transform: translate(-90%);
@@ -396,7 +442,6 @@ section h2 {
 
 /*-------------------- social media icons -----------------------*/
 
-
 .fa {
   padding-top: 35px;
   padding-left: 15px;
@@ -434,7 +479,6 @@ section h2 {
 
 /*-------------------- what why when conetent part -----------------------*/
 
-
 .main-pageContent {
   display: flex;
   flex-direction: column;
@@ -449,10 +493,9 @@ section h2 {
   font-size: 5.2rem;
   font-weight: 900;
   color: white;
-
 }
 .main-pageContent p {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   margin-top: 3%;
   font-size: 1.5rem;
   width: 55%;
@@ -463,9 +506,9 @@ section h2 {
   font-weight: 900;
   transition: firstLetter 5s ease-in;
 }
-@keyframes firstLetter{
-  from{
-    clip-path:0;
+@keyframes firstLetter {
+  from {
+    clip-path: 0;
   }
 }
 @media screen and (max-width: 1000px) {
@@ -491,17 +534,17 @@ footer p {
   font-size: 1.6rem;
   text-align: center;
   font-weight: bold;
-  font-family: 'Monda', sans-serif;
+  font-family: "Monda", sans-serif;
 }
 @media screen and (max-width: 1000px) {
   footer p {
-  font-size: 1.3rem;
-}
+    font-size: 1.3rem;
+  }
 }
 
 /*-------------------- loading page -----------------------*/
 
-.loader-wrapper{
+.loader-wrapper {
   position: absolute;
   top: 0;
   left: 0;
@@ -512,7 +555,6 @@ footer p {
 }
 
 #logo {
-
   position: absolute;
 
   top: 50%;
@@ -522,106 +564,79 @@ footer p {
   transform: translate(-50%, -50%);
 
   animation: fill 0.5s ease forwards 3.5s;
-
 }
 
-#logo path{
+#logo path {
 }
 
 #logo path:nth-child(1) {
-
   stroke-dasharray: 604.4829711914062px;
 
   stroke-dashoffset: 604.4829711914062px;
 
   animation: line-anim 2s ease forwards;
-
 }
 
 #logo path:nth-child(2) {
-
   stroke-dasharray: 226.94400024414062px;
 
   stroke-dashoffset: 226.94400024414062px;
 
   animation: line-anim 3s ease forwards 0.3s;
-
 }
 
 #logo path:nth-child(3) {
-
   stroke-dasharray: 336.6719970703125px;
 
   stroke-dashoffset: 336.6719970703125px;
 
   animation: line-anim 3s ease forwards 0.6s;
-
 }
 
 #logo path:nth-child(4) {
-
   stroke-dasharray: 508.5517272949219px;
 
   stroke-dashoffset: 508.5517272949219px;
 
   animation: line-anim 3s ease forwards 0.9s;
-
 }
 
 #logo path:nth-child(5) {
-
   stroke-dasharray: 754.9266357421875px;
 
   stroke-dashoffset: 754.9266357421875px;
 
   animation: line-anim 3s ease forwards 1.2s;
-
 }
 
 #logo path:nth-child(6) {
-
   stroke-dasharray: 483.892822265625px;
 
   stroke-dashoffset: 483.892822265625px;
 
   animation: line-anim 3s ease forwards 1.5s;
-
 }
 
 #logo path:nth-child(7) {
-
   stroke-dasharray: 604.4829711914062px;
 
   stroke-dashoffset: 604.4829711914062px;
 
   animation: line-anim 3s ease forwards 1.8s;
-
 }
 
- 
-
 @keyframes line-anim {
-
   to {
-
     stroke-dashoffset: 0;
-
   }
-
 }
 
 @keyframes fill {
-
   from {
-
     fill: transparent;
-
   }
 
   to {
-
     fill: white;
-
   }
-
 }
