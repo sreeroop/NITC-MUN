@@ -7,8 +7,6 @@ const links = document.querySelectorAll(".nav-links li");
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("open");
 
-  navLinks.style.setProperty("overflow", `${hidden}`);
-
   /* links.forEach((links) => {
     links.classList.toggle("fade");
   }); */
@@ -72,4 +70,5 @@ sections.forEach((section) => {
 setTimeout(function () {
   $(".loader-wrapper").fadeOut();
   $("#logo").delay(150).fadeOut("slow");
-}, 8000);
+  $("body").removeClass("load");
+}, 5000);

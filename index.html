@@ -27,10 +27,10 @@
     />
 
     <link rel="stylesheet" href="./css/style.css" />
-    <title>Document</title>
+    <title>NITC-MUN</title>
   </head>
 
-  <body>
+  <body class="load">
     <!----------------------------- 1st navigation bar ---------------------------------------->
 
     <div class="header">
@@ -157,8 +157,8 @@
     </main>
 
     <!------------------------------ loading page ------------------------------>
-    <!--
-      <div class="loader-wrapper">
+
+    <div class="loader-wrapper">
       <svg
         id="logo"
         width="665"
@@ -218,13 +218,6 @@
       integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
       crossorigin="anonymous"
     ></script>
-    <script>
-      const logo = document.querySelectorAll("#logo path");
-
-      for (let i = 0; i < logo.length; i++) {
-        console.log(`Letter ${i} is ${logo[i].getTotalLength()}`);
-      }
-    </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.0/gsap.min.js"></script>
     <script
