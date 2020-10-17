@@ -1,6 +1,22 @@
-/*
-window.addEventListener("load", function () {
-  init();
+gsap.registerPlugin(ScrollTrigger);
+
+gsap.to(".what-heading", {
+  scrollTrigger: ".whatContent",
+  start: "top center",
+  opacity: 1,
+  duration: 3,
+});
+gsap.to(".why-heading", {
+  scrollTrigger: ".whyContent",
+  start: "top center",
+  opacity: 1,
+  duration: 3,
+});
+gsap.to(".who-heading", {
+  scrollTrigger: ".whoContent",
+  start: "top center",
+  opacity: 1,
+  duration: 3,
 });
 
 gsap.fromTo(
@@ -11,6 +27,5 @@ gsap.fromTo(
 gsap.fromTo(
   ".MUNlogo,.landing-img",
   { opacity: 0.3 },
-  { duration: 5, opacity: 1, delay: 8 }
+  { duration: 3, opacity: 1, delay: 8 }
 );
-*/
