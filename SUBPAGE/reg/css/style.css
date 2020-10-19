@@ -401,18 +401,20 @@ a span {
 /*-------------------- footer -----------------------*/
 
 footer {
+  margin-top: 5%;
   align-items: center;
-  background-color: #cbe2f4;
+  background-color: transparent;
 }
 footer p {
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   text-align: center;
   font-weight: bold;
   font-family: "Monda", sans-serif;
+  color: #154873;
 }
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 500px) {
   footer p {
-    font-size: 1.3rem;
+    font-size: 0.8rem;
   }
 }
 
