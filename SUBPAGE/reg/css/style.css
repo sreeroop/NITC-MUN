@@ -324,8 +324,8 @@ a span {
 }
 .connect p {
   position: absolute;
-  left: -115px;
-  top: 250px;
+  left: 42px;
+  top: 155px;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -350,8 +350,8 @@ a span {
   }
   .connect p {
     position: absolute;
-    left: -130px;
-    top: 250px;
+    left: 25px;
+    top: 150px;
     display: flex;
     font-weight: bold;
     color: rgba(255, 255, 255, 0.3);
@@ -361,7 +361,6 @@ a span {
     background-color: #154873;
   }
 }
-
 /*-------------------- social media icons -----------------------*/
 
 .fa {
@@ -384,7 +383,7 @@ a span {
   color: white;
 }
 
-.fa-twitter {
+.fa-envelope-o {
   background: transparent;
   color: white;
 }
