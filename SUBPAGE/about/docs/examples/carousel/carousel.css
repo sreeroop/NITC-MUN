@@ -39,6 +39,25 @@ body {
 
   justify-content: space-between;
 }
+.nav img {
+  margin-left: 5px;
+
+  align-items: center;
+
+  position: absolute;
+
+  cursor: pointer;
+
+  left: 5%;
+
+  top: 50%;
+
+  transform: translate(-5%, -50%);
+
+  width: 30px;
+
+  z-index: 3;
+}
 
 .nav h1 {
   font-family: "Poppins", sans-serif;
