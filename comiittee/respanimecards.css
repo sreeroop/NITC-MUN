@@ -8,12 +8,18 @@ body{
     /*background:linear-gradient(to right,rgba(0, 0, 0,0.7),rgba(17, 79, 141,0.7),rgba(21, 138, 248,0.7));*/
 background-color: black;
 height: 100%;
+overflow-x:hidden; 
+}
 
+html{
+  overflow-x:hidden; 
+  /*background-color: black;*/
 }
 
 
   .navbar {
     background-color: black;
+
 }
 
 }
@@ -41,13 +47,15 @@ img {
     grid-template-columns: repeat(3,1fr);
     grid-gap: 30px;
     align-items: center;
+    padding:10px; 
+    /*justify-content: center;*/
+    justify-content: center;
+    place-items:center;
 }
+
 .grid > article{
     width: 325px;
     background-color: black;
-    /*border: 1px solid #ccc;
-    box-shadow: 2px 2px 6px 0px rgba(0,0,0,0.3);
-    border-radius: 3px;*/
     text-align: center;
 }
 
@@ -66,6 +74,9 @@ img {
 
 .text{
     padding: 0 20px 20px;
+    position: relative;
+    text-align: center;
+    margin: auto;
 }
 
 
@@ -73,6 +84,10 @@ img {
 .text >h3{
   color: #000a14;
     text-transform: uppercase;
+    place-items:center;
+    text-align: center;
+    justify-content: center;
+    
 }
 
 h2{
@@ -82,41 +97,120 @@ h2{
 
 
 .text a{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-27.5%);
     background: #cbe2f4;
     border-radius: 8px;
     border:none;
     color: black;
-    padding: 0.5px;
+    padding: 2px;
     width: 100%;
     font-weight: 600;
     text-shadow: 2px 2px 6px 0px rgba(0,0,0,0,0.3);
     text-transform: uppercase;
     font-size: 22px;
-    /*border-radius: 100%;*/
+    text-align: center;
+    justify-content: center;
+    place-items:center;
+
+        /*border-radius: 100%;*/
 }
 
 
 
-@media(max-width: 1030px) and (min-width: 300px){
+@media(max-width: 1030px) and (min-width: 760px){
+ 
     .grid{
-      width: 250px;
-        grid-template-columns: repeat(1,1fr); 
-        align-items: center;
+      position: relative;
+      grid-gap: 30px;
+      margin:auto;
+      display: grid;
+      grid-template-columns: repeat(3,1fr); 
+      align-items: center;
+      justify-content: center;
+      padding: 10px;
+        }
+
+    .grid > article{
+      width: 120px;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+      align-content: center;
+      align-self: center;
+      background-color: black;
     }
+    .text a{
+      display: grid;
+    background: #cbe2f4;
+    border-radius: 8px;
+    border:none;
+    color: black;
+    padding: 2px;
+    width: 100%;
+    font-weight: 600;
+    text-shadow: 2px 2px 6px 0px rgba(0,0,0,0,0.3);
+    text-transform: uppercase;
+    font-size: 22px;
+    margin: auto;
+    
+}
+.text >h3{
+
+  color: #000a14;
+    text-transform: uppercase;
+    place-items:center;
+    text-align: center;
+    justify-content: center;
+    padding-left: 18px;
+}
 }
 
-@media(max-width: 600px) and (min-width: 100px){
+
+
+@media(max-width: 760px) and (min-width: 100px){
     .grid{
+      position: relative;
+      display: grid;
+      grid-gap: 30px;
         grid-template-columns: repeat(1,1fr);
-        width: 160px;
-        margin-left: 20px;
+        margin:auto;
+        justify-content: center;
          align-items: center;
     }
 
     .grid>article{
         text-align: center;
+        width: 160px;
+        background-color: black;
     }
+
+    .text a{
+      transform: translateX(-47.5%);
+    background: #cbe2f4;
+    border-radius: 8px;
+    border:none;
+    color: black;
+    padding: 2px;
+    width: 100%;
+    font-weight: 600;
+    text-shadow: 2px 2px 6px 0px rgba(0,0,0,0,0.3);
+    text-transform: uppercase;
+    font-size: 22px;
+    margin: auto;
 }
+.text >h3{
+  color: #000a14;
+    text-transform: uppercase;
+    place-items:center;
+    text-align: center;
+    justify-content: center;
+    padding-left: 5px;
+}
+}
+
+
 
 
 p{
@@ -227,7 +321,7 @@ h6{
   position: absolute;
   top: 0;
   width: 100%;
-  height: 250vh;
+  height: 245vh;
   background-color: black;
   background-image: url("");
   background-size: cover;
@@ -235,14 +329,12 @@ h6{
   z-index: -2;
 }
 
-
-
-@media(max-width:600px){
+@media(max-width:1030px){
   #particles-js {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 500vh;
+  height: 210vh;
   background-color: black;
   background-image: url("");
   background-size: cover;
@@ -250,6 +342,38 @@ h6{
   z-index: -2;
 }
 }
+
+
+@media(max-width:770px){
+  #particles-js {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 305vh;
+  background-color: black;
+  background-image: url("");
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: -2;
+}
+}
+
+@media(max-width:500px){
+  #particles-js {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 520vh;
+  background-color: black;
+  background-image: url("");
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: -2;
+}
+}
+
+
+
 
 /*------------------------------ 1st nav bar ------------------------------*/
 
