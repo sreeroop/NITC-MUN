@@ -448,7 +448,7 @@ section h2 {
 }
 .connect p {
   position: absolute;
-  left: 42px;
+  left: 30px;
   top: 155px;
   display: flex;
   flex-direction: column;
@@ -456,6 +456,8 @@ section h2 {
   transform: rotate(90deg);
   font-weight: bold;
   color: rgba(255, 255, 255, 0.3);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 3px;
 }
 .connect:hover {
   transform: translate(0%);
@@ -474,7 +476,7 @@ section h2 {
   }
   .connect p {
     position: absolute;
-    left: 25px;
+    left: 15px;
     top: 150px;
     display: flex;
     font-weight: bold;
