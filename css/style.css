@@ -361,6 +361,11 @@ nav ul {
 
   flex: 1;
 }
+@media screen and (max-width: 500px) {
+  nav ul {
+    font-size: 1rem;
+  }
+}
 
 nav ul {
   list-style: none;
