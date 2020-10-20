@@ -53,8 +53,8 @@ img {
 }
 
 .grid > article:hover {
-  transition: transform 0.1s ease-out;
-  transform: translateY(5px);
+  transition: transform 1s ease-out;
+  transform: scale(1.1);
 }
 
 .grid > article img {
@@ -616,8 +616,28 @@ a span {
 }
 
 /*-------------------- footer -----------------------*/
+/*-------------------- footer -----------------------*/
 
 footer {
+  margin-top: 5%;
+  align-items: center;
+  background-color: transparent;
+}
+footer h5 {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Monda", sans-serif;
+  color: #154873;
+}
+@media screen and (max-width: 500px) {
+  footer h5 {
+    font-size: 0.8rem;
+  }
+}
+
+
+/*footer {
   align-items: center;
   background-color: transparent;
   margin-top: 5%;
@@ -632,7 +652,7 @@ footer p {
   footer p {
     font-size: 0.8rem;
   }
-}
+}*/
 
 /*-------------------- social media links -----------------------*/
 
@@ -724,3 +744,5 @@ footer p {
   background: transparent;
   color: white;
 }
+
+
