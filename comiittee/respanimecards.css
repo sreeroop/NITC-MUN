@@ -22,7 +22,6 @@ img {
   align-items: center;
   max-height: 160px;
   max-width: 160px;
-  margin-top: 20px;
 }
 
 .abovehr {
@@ -40,6 +39,8 @@ img {
   flex-wrap: wrap;
   margin: auto;
   text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .grid > article {
@@ -48,6 +49,7 @@ img {
   text-align: center;
   margin: auto;
   justify-content: center;
+  margin-top: 20px;
 }
 
 .grid > article:hover {
@@ -269,7 +271,7 @@ h6 {
   position: absolute;
   top: 0;
   width: 100%;
-  height: 300vh;
+  height: 260vh;
   background-color: black;
   background-image: url("");
   background-size: cover;
