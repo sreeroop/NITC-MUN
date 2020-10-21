@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+<link rel="icon" href="../assets/logo_IPF[1].png" />
+    <title>About</title>
+
+    <link rel="stylesheet" href="./style.css" />
+</head>
+
+<body class="load">
+<div class="loader-wrapper" style="
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fcfcfc;
+  width: 100%;
+  height: 100%;
+  z-index: 10;">
+    <img src="../assets/loader-gif.gif" id="logo" style="
+  position: absolute;
+
+  top: 50%;
+
+  left: 50%;
+
+  transform: translate(-50%, -50%);
+
+  width: 200px;
+
+  z-index: 20;" />
+</div>
+    <div class="header">
+        <div class="nav">
+            <img src="../assets/logo_IPF[1].png" />
+
+            <button class="menu hamburger"
+                onclick="this.classList.toggle('opened');this.setAttribute('aria-expanded', this.classList.contains('opened'))"
+                aria-label="Main Menu">
+                <svg width="50" height="50" viewBox="0 0 100 100">
+                    <path class="line line1"
+                        d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058" />
+                    <path class="line line2" d="M 20,50 H 80" />
+                    <path class="line line3"
+                        d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942" />
+                </svg>
+            </button>
+
+            <ul class="nav-links">
+                <li>
+                    <a href="../index.html" data-text="Home"><span>&times;</span>Home</a>
+                </li>
+
+                <li>
+                    <a href="#" data-text="About" style="color: rgba(21, 73, 115, 1)"><span>&times;</span>About</a>
+                </li>
+
+                <li>
+                    <a href="../reg/register.html" data-text="Register"><span>&times;</span>Register</a>
+                </li>
+                <li>
+                    <a href="../comiittee/muncommittenoanime.html"
+                        data-text="Committee"><span>&times;</span>Committee</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="particles-js"></div>
+
+    <div class="slider">
+        <div class="slides">
+            <div class="slide">
+                <div class="slide-data">
+                    <h1></h1>
+                    <p>
+                        
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-data">
+                    <h1>About IPF</h1>
+                    <p>
+                        The Industrial and Planning Forum(IPF) is a techno-management club that strives to groom students for facing the
+                        professional world. The aim at IPF is to bridge the gap between technical education and the corporate scene, while
+                        simultaneously focusing on the overall personality development.
+                    </p>
+                    
+                </div>
+            </div>
+            <div class="slide">
+                <div class="slide-data">
+                    <h1></h1>
+                    <p>
+                        
+                    </p>
+                    
+                </div>
+            </div>
+        </div>
+
+        <button class="arrows prev" onclick="plusslide(-1)">
+            <span><i class="fa fa-arrow-circle-left"></i></span>
+        </button>
+        <button class="arrows next" onclick="plusslide(1)">
+            <span><i class="fa fa-arrow-circle-right"></i></span>
+        </button>
+
+        <div class="dots">
+            <span onclick="currentslide(1)"></span>
+            <span onclick="currentslide(2)"></span>
+            <span onclick="currentslide(3)"></span>
+        </div>
+    </div>
+
+    <div class="heading-contact">
+        <h1>contact</h1>
+    </div>
+    <div class="crew">
+        <div class="row2">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="IPF-PICS/sharon.jpg" alt="" />
+                </div>
+
+                <div class="contentBx">
+                    <h3>Sharon Makil</h3>
+
+                    <h2 class="price">General Secretary</h2>
+
+                    <div class="contact">
+                        <a href="tel://+91-8606886542" class="fa fa-phone"></a>
+                        <a href="mailto: sharonmakil@gmail.com" class="fa fa-envelope"></a>
+                        <a href="https://www.instagram.com/sharon_makil/" class="fa fa-instagram"></a>
+                        <a href="https://www.linkedin.com/in/sharon-makil-9716081a4" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="IPF-PICS/anjela.jpg" alt="" />
+                </div>
+
+                <div class="contentBx">
+                    <h3>Angela Ajeesh</h3>
+
+                    <h2 class="price">Delegate Affairs</h2>
+
+                    <div class="contact">
+                        <a href="tel://+91-9745032525" class="fa fa-phone"></a>
+                        <a href="mailto: angela.ajeesh11@gmail.com" class="fa fa-envelope"></a>
+                        <a href="https://www.instagram.com/angela._.jane/" class="fa fa-instagram"></a>
+                        <a href="https://www.linkedin.com/in/angela-ajeesh-7463bb1aa" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row1">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="IPF-PICS/avantika.jpg" alt="" />
+                </div>
+
+                <div class="contentBx">
+                    <h3>Avantika Dandapani</h3>
+
+                    <h2 class="price">Delegate Affairs</h2>
+
+                    <div class="contact">
+                        <a href="tel://+91-9384634296" class="fa fa-phone"></a>
+                        <a href="mailto: avantikadandapani@gmail.com" class="fa fa-envelope"></a>
+                        <a href="https://www.instagram.com/avantikadandapani/" class="fa fa-instagram"></a>
+                        <a href="https://www.linkedin.com/in/avantika-dandapani-0100941a9" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row3">
+            <div class="card">
+                <div class="imgBx">
+                    <img src="IPF-PICS/sam.jpg" alt="" />
+                </div>
+
+                <div class="contentBx">
+                    <h3>Aju Paul Sam</h3>
+
+                    <h2 class="price">External Relations</h2>
+
+                    <div class="contact">
+                        <a href="tel://+91-6282437449" class="fa fa-phone"></a>
+                        <a href="mailto: ajupaulsam@gmail.com" class="fa fa-envelope"></a>
+                        <a href="https://www.instagram.com/aju__sam/" class="fa fa-instagram"></a>
+                        <a href="#" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="imgBx">
+                    <img src="IPF-PICS/vishnu.jpg" alt="" />
+                </div>
+
+                <div class="contentBx">
+                    <h3>Vishnu Sajith</h3>
+
+                    <h2 class="price">Technical Head</h2>
+
+                    <div class="contact">
+                        <a href="tel://+91-6282579996" class="fa fa-phone"></a>
+                        <a href="mailto: me.vishnu24399@gmail.com" class="fa fa-envelope"></a>
+                        <a href="https://www.instagram.com/v4vshnu/" class="fa fa-instagram"></a>
+                        <a href="https://www.linkedin.com/in/vishnu-sajith-4478b89a" class="fa fa-linkedin"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- FOOTER -->
+    <footer>
+        <p style="
+      font-size: 1.2rem;
+      text-align: center;
+      font-weight: bold;
+      font-family: " Monda", sans-serif; color: #154873;">Copyright &copy; 2020 | IPF NIT CALICUT</p>
+    </footer>
+
+
+
+    
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+    <script src="../js/app.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/particle/particles.js"></script>
+    <script src="../js/particle/app.js"></script>
+</body>
+
+</html>

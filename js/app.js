@@ -27,7 +27,7 @@ gsap.fromTo(
 gsap.fromTo(
   ".MUNlogo,.landing-img",
   { opacity: 0.3 },
-  { duration: 3, opacity: 1, delay: 8 }
+  { duration: 3, opacity: 1, delay: 5 }
 );
 /*
 let tl = gsap.timeline({
