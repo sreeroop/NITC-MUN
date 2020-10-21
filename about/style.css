@@ -283,7 +283,6 @@ a span {
   background-repeat: no-repeat;
 }
 .slide-data {
-  font: poppins;
 }
 
 .slide::before {
@@ -305,9 +304,13 @@ a span {
 }
 
 .slide:nth-child(3) {
-  background-image: url(IPF-PICS/20507629_458167257902072_3305603049860170314_o.jpg);
+  background-image: url(./IPF-PICS/amc.jpg);
 }
-
+@media screen and (max-width: 790px) {
+  .slide:nth-child(3) {
+    background-image: url(./IPF-PICS/Amc\ 790x\ 590-1.png);
+  }
+}
 .slide-data {
   position: absolute;
   top: 50%;
@@ -318,17 +321,23 @@ a span {
   padding: 0 20%;
 }
 .slide-data h1 {
-  font-family: "Anton", serif;
+  font-family: "Poppins", sans-serif;
   text-transform: uppercase;
   font-weight: bolder;
-  font-size: 45px;
+  font-size: 2rem;
+  filter: brightness(2);
 }
 .slide-data p {
-  font-family: "Cabin", serif;
-  font-size: 18px;
+  font-family: "Poppins", sans-serif;
+  font-size: 1.2rem;
   margin-bottom: 10px;
+  filter: brightness(2);
 }
-
+@media screen and (max-width: 390px) {
+  .slide-data p {
+    font-size: 0.8rem;
+  }
+}
 .slide-data button {
   font-family: "Roboto", serif;
   background: none;
