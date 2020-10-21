@@ -322,10 +322,11 @@ a span {
   text-transform: uppercase;
   font-weight: bolder;
   font-size: 45px;
+  /*color:#cbe2f4;*/
 }
 .slide-data p {
   font-family: "Cabin", serif;
-  font-size: 18px;
+  font-size: 28px;
   margin-bottom: 10px;
 }
 
