@@ -533,7 +533,7 @@ section h2 {
   justify-content: space-between;
   align-items: center;
   margin-top: 3%;
-  text-align: justify;
+  text-align: left;
 }
 .main-pageContent h2 {
   font-size: 5rem;
