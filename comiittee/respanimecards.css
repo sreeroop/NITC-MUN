@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 body {
   /*background:linear-gradient(to right,rgba(0, 0, 0,0.7),rgba(17, 79, 141,0.7),rgba(21, 138, 248,0.7));*/
@@ -636,7 +637,6 @@ footer h5 {
   }
 }
 
-
 /*footer {
   align-items: center;
   background-color: transparent;
@@ -744,5 +744,3 @@ footer p {
   background: transparent;
   color: white;
 }
-
-
