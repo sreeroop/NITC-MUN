@@ -1,18 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap");
 * {
   margin: 0;
-
   padding: 0;
-
   box-sizing: boarder-box;
 }
-
 body {
   background-color: black;
 }
-
-/*------------------------------ particle animation  ------------------------------*/
-
 #particles-js {
   position: absolute;
   top: 0;
@@ -24,62 +18,38 @@ body {
   background-position: 50% 50%;
   z-index: -2;
 }
-
-/*------------------------------ 1st nav bar ------------------------------*/
-
 .nav {
   position: relative;
-
   height: 15vh;
-
   background: rgba(0, 0, 0, 0.1);
-
   align-items: center;
-
   justify-content: space-between;
 }
 .nav img {
   margin-left: 5px;
-
   align-items: center;
-
   position: absolute;
-
   cursor: pointer;
-
   left: 5%;
-
   top: 50%;
-
   transform: translate(-5%, -50%);
-
   width: 30px;
-
   z-index: 3;
 }
-
 .nav-links {
   display: flex;
-
   list-style: none;
-
   width: 50%;
-
   height: 100%;
-
   justify-content: space-around;
-
   align-items: center;
-
   margin-left: auto;
 }
-
 .nav-links li a {
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   text-decoration: none;
-
   font-size: 18px;
 }
 .nav-links li a:hover {
@@ -98,53 +68,33 @@ a span {
     align-items: center;
     overflow: hidden;
   }
-
   .nav-links {
     position: fixed;
-
     background: rgba(21, 73, 115, 1);
-
     height: 100vh;
-
     width: 100%;
-
     flex-direction: column;
-
     clip-path: circle(100px at 90% -20%);
-
     -webkit-clip-path: circle(100px at 90% -20%);
-
     transition: all 1s ease-out;
-
     pointer-events: none;
     z-index: 2;
   }
-
   .nav-links.open {
     clip-path: circle(1200px at 90% -10%);
-
     -webkit-clip-path: circle(1200px at 90% -10%);
-
     pointer-events: all;
-
     overflow: hidden;
   }
-
   .landing {
     flex-direction: column;
   }
-
   .hamburger {
     position: absolute;
-
     cursor: pointer;
-
     right: 5%;
-
     top: 50%;
-
     transform: translate(-5%, -50%);
-
     z-index: 3;
   }
   .menu {
@@ -188,90 +138,61 @@ a span {
     stroke-dashoffset: -134;
     stroke-width: 6;
   }
-
   .nav-links li {
     list-style: none;
-
     padding: 0 30px;
-
     font-size: 4em;
-
     overflow: hidden;
   }
-
   .nav-links li a {
     position: relative;
-
     color: rgba(255, 255, 255, 0.1);
-
     text-decoration: none;
-
     font-weight: 700;
   }
-
   .nav-links:hover li a:before {
     animation: animate 1s steps(8) forwards;
   }
-
   @keyframes animate {
     0% {
       width: 281.5px;
     }
-
     100% {
       width: 0px;
     }
   }
-
   .nav-links li a:before {
     content: attr(data-text);
-
     position: absolute;
     top: 0;
-
     left: 13px;
-
     overflow-y: hidden;
-
     color: #1bfaad;
-
     white-space: nowrap;
-
     overflow: hidden;
   }
-
   .nav-links li:hover span {
     color: #ef0448;
   }
-
   li a span {
     position: relative;
-
     top: -2px;
-
     left: -10px;
-
     color: transparent;
-
     display: initial;
   }
-
   .nav-links li:hover a:before {
     animation: animateTwo 1s steps(8) forwards;
   }
-
   @keyframes animateTwo {
     0% {
       width: 0px;
     }
-
     100% {
       width: 281.5px;
     }
   }
 }
-/*-------------------- main page section where logo comes -----------------------*/
-
 .landing {
   position: relative;
   top: 0;
@@ -300,16 +221,12 @@ a span {
   align-items: center;
   text-align: justify;
   font-size: 1.3rem;
-
   color: white;
 }
 .landing a {
   text-decoration: none;
   color: #b8001a;
 }
-
-/*-------------------- social media links -----------------------*/
-
 .connect {
   position: fixed;
   left: 0;
@@ -363,8 +280,6 @@ a span {
     background-color: #154873;
   }
 }
-/*-------------------- social media icons -----------------------*/
-
 .fa {
   padding-top: 35px;
   padding-left: 15px;
@@ -373,35 +288,27 @@ a span {
   text-decoration: none;
   opacity: 0.7;
 }
-
 .fa:hover {
   opacity: 1;
   transform: scale(1.2);
   color: #0693ff;
 }
-
 .fa-facebook {
   background: transparent;
   color: white;
 }
-
 .fa-envelope-o {
   background: transparent;
   color: white;
 }
-
 .fa-instagram {
   background: transparent;
   color: white;
 }
-
 .fa-linkedin {
   background: transparent;
   color: white;
 }
-
-/*-------------------- footer -----------------------*/
-
 footer {
   margin-top: 5%;
   align-items: center;
@@ -419,9 +326,6 @@ footer p {
     font-size: 0.8rem;
   }
 }
-
-/*-------------------- loading page -----------------------*/
-
 .loader-wrapper {
   position: fixed;
   top: 0;
@@ -433,18 +337,12 @@ footer p {
 }
 #logo {
   position: absolute;
-
   top: 50%;
-
   left: 50%;
-
   transform: translate(-50%, -50%);
-
   max-width: 200px;
-
   z-index: 20;
 }
-
 .load {
   overflow: hidden;
 }

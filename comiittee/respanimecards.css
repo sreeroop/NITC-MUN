@@ -5,34 +5,27 @@
   font-family: "Poppins", sans-serif;
 }
 body {
-  /*background:linear-gradient(to right,rgba(0, 0, 0,0.7),rgba(17, 79, 141,0.7),rgba(21, 138, 248,0.7));*/
   background-color: black;
   height: fit-content;
 }
 html {
   overflow-x: hidden;
-  /*background-color: black;*/
 }
-
 .navbar {
   background-color: black;
 }
-
 img {
   vertical-align: middle;
   align-items: center;
   max-height: 160px;
   max-width: 160px;
 }
-
 .abovehr {
   background-color: black;
 }
-
 .belowhr {
   background-color: black;
 }
-
 .grid {
   position: relative;
   display: flex;
@@ -43,7 +36,6 @@ img {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-
 .grid > article {
   width: 325px;
   background-color: black;
@@ -52,12 +44,10 @@ img {
   justify-content: center;
   margin-top: 20px;
 }
-
 .grid > article:hover {
   transition: transform 1s ease-out;
   transform: scale(1.1);
 }
-
 .grid > article img {
   align-items: center;
   vertical-align: center;
@@ -66,29 +56,20 @@ img {
   border-radius: 100%;
   margin: auto;
 }
-
 .text {
   padding: 0 20px 20px;
   position: relative;
   text-align: center;
   margin: auto;
 }
-
 .text > h3 {
   text-transform: uppercase;
   color: #000a14;
-  /*color: #000a14;
-  text-transform: uppercase;
-  place-items: center;
-  text-align: center;
-  justify-content: center;*/
 }
-
 h2 {
   color: white;
   margin: 320px;
 }
-
 .text a {
   background: #cbe2f4;
   border-radius: 20%;
@@ -102,12 +83,10 @@ h2 {
   font-size: 22px;
   text-decoration: none;
 }
-
 .text a:hover {
   background: black;
   color: #cbe2f4;
 }
-
 @media (max-width: 1030px) and (min-width: 760px) {
   .grid {
     width: 250px;
@@ -126,29 +105,20 @@ h2 {
     text-decoration: none;
   }
   .text > h3 {
-    /*color: #000a14;
-    text-transform: uppercase;
-    place-items: center;
-    text-align: center;
-    justify-content: center;
-    padding-left: 18px;*/
     text-transform: uppercase;
     color: #000a14;
   }
 }
-
 @media (max-width: 760px) and (min-width: 100px) {
   .grid {
     width: 160px;
     align-items: center;
   }
-
   .grid > article {
     text-align: center;
     width: 160px;
     background-color: black;
   }
-
   .text a {
     background: #cbe2f4;
     border-radius: 20%;
@@ -162,17 +132,10 @@ h2 {
     text-decoration: none;
   }
   .text > h3 {
-    /*color: #000a14;
-    text-transform: uppercase;
-    place-items: center;
-    text-align: center;
-    justify-content: center;
-    padding-left: 5px;*/
     text-transform: uppercase;
     color: #000a14;
   }
 }
-
 p {
   color: white;
   padding: 20px;
@@ -183,13 +146,9 @@ p {
   font-weight: 600;
   background-color: #154973;
 }
-
 .grid1 {
   grid-template-columns: repeat(2, 1fr);
 }
-
-/*social media links */
-
 .sidebar {
   margin-top: 20px;
   background-color: white;
@@ -202,7 +161,6 @@ p {
   margin-right: 20px;
   font-weight: 500;
 }
-
 .social-icons-ql li {
   display: inline;
   list-style: none;
@@ -214,7 +172,6 @@ p {
   text-align: center;
   margin: 10px 5px;
 }
-
 .social-icons-ql li:nth-child(1) {
   width: 50px;
   height: 50px;
@@ -222,7 +179,6 @@ p {
   margin: 5px 5px;
   background: #ea7af4;
 }
-
 .social-icons-ql li:nth-child(1) i {
   font-size: 25px;
 }
@@ -246,28 +202,16 @@ p {
 .social-icons-ql li:nth-child(7) {
   background: #eb4924;
 }
-
 .social-icons-ql li i {
   color: #fff;
   font-size: 20px;
 }
-
-/*social media links*/
-
 i {
   font-size: 200px;
 }
-
 h6 {
   font-size: 30px;
 }
-
-/**********animation attempt****************/
-
-/******************************* sreeroops css*************************************/
-
-/*------------------------------ particle animation  ------------------------------*/
-
 #particles-js {
   position: absolute;
   top: 0;
@@ -331,61 +275,38 @@ h6 {
     z-index: -2;
   }
 }
-/*------------------------------ 1st nav bar ------------------------------*/
-
 .nav {
   position: relative;
-
   height: 15vh;
-
   background: rgba(0, 0, 0, 0.1);
-
   align-items: center;
-
   justify-content: space-between;
 }
 .nav img {
   margin-left: 5px;
-
   align-items: center;
-
   position: absolute;
-
   cursor: pointer;
-
   left: 5%;
-
   top: 50%;
-
   transform: translate(-5%, -50%);
-
   width: 30px;
-
   z-index: 3;
 }
-
 .nav-links {
   display: flex;
-
   list-style: none;
-
   width: 50%;
-
   height: 100%;
-
   justify-content: space-around;
-
   align-items: center;
-
   margin-left: auto;
 }
-
 .nav-links li a {
   color: white;
   font-family: "Poppins", sans-serif;
   font-weight: 800;
   text-decoration: none;
-
   font-size: 18px;
 }
 .nav-links li a:hover {
@@ -404,53 +325,34 @@ a span {
     align-items: center;
     overflow: hidden;
   }
-
   .nav-links {
     position: fixed;
-
     background: rgba(21, 73, 115, 1);
-
     height: 100vh;
-
     width: 100%;
-
     flex-direction: column;
     justify-content: space-around;
     clip-path: circle(100px at 90% -20%);
-
     -webkit-clip-path: circle(100px at 90% -20%);
-
     transition: all 1s ease-out;
-
     pointer-events: none;
     z-index: 2;
   }
-
   .nav-links.open {
     clip-path: circle(10000px at 90% -10%);
-
     -webkit-clip-path: circle(10000px at 90% -10%);
-
     pointer-events: all;
-
     overflow: hidden;
   }
-
   .landing {
     flex-direction: column;
   }
-
   .hamburger {
     position: absolute;
-
     cursor: pointer;
-
     right: 5%;
-
     top: 50%;
-
     transform: translate(-5%, -50%);
-
     z-index: 3;
   }
   .menu {
@@ -494,109 +396,75 @@ a span {
     stroke-dashoffset: -134;
     stroke-width: 6;
   }
-
   .nav-links li {
     list-style: none;
-
     padding: 0 30px;
-
     font-size: 4em;
-
     overflow: hidden;
   }
-
   .nav-links li a {
     position: relative;
-
     color: rgba(255, 255, 255, 0.1);
-
     text-decoration: none;
-
     font-weight: 700;
   }
-
   .nav-links:hover li a:before {
     animation: animate 1s steps(8) forwards;
   }
-
   @keyframes animate {
     0% {
       width: 281.5px;
     }
-
     100% {
       width: 0px;
     }
   }
-
   .nav-links li a:before {
     content: attr(data-text);
-
     position: absolute;
     top: 0;
-
     left: 13px;
-
     overflow-y: hidden;
-
     color: #1bfaad;
-
     white-space: nowrap;
-
     overflow: hidden;
   }
-
   .nav-links li:hover span {
     color: #ef0448;
   }
-
   li a span {
     position: relative;
-
     top: -2px;
-
     left: -10px;
-
     color: transparent;
-
     display: initial;
   }
-
   .nav-links li:hover a:before {
     animation: animateTwo 1s steps(8) forwards;
   }
-
   @keyframes animateTwo {
     0% {
       width: 0px;
     }
-
     100% {
       width: 281.5px;
     }
   }
 }
-
-/*-------------------- main page section where logo comes -----------------------*/
-
 .landing {
   height: 100vh;
   position: relative;
   top: 0;
   left: 0;
 }
-
 .landing h1 {
   margin: 100px;
-
   font-family: "Poppins", sans-serif;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   font-size: 50px;
-
   color: #ae5fce;
 }
 .MUNlogo {
@@ -615,10 +483,6 @@ a span {
     height: auto;
   }
 }
-
-/*-------------------- footer -----------------------*/
-/*-------------------- footer -----------------------*/
-
 footer {
   margin-top: 5%;
   align-items: center;
@@ -636,26 +500,6 @@ footer h5 {
     font-size: 0.8rem;
   }
 }
-
-/*footer {
-  align-items: center;
-  background-color: transparent;
-  margin-top: 5%;
-}
-footer p {
-  font-size: 1.2rem;
-  text-align: center;
-  font-weight: bold;
-  font-family: "Monda", sans-serif;
-}
-@media screen and (max-width: 1000px) {
-  footer p {
-    font-size: 0.8rem;
-  }
-}*/
-
-/*-------------------- social media links -----------------------*/
-
 .connect {
   position: fixed;
   left: 0;
@@ -707,9 +551,6 @@ footer p {
     background-color: #154873;
   }
 }
-
-/*-------------------- social media icons -----------------------*/
-
 .fa {
   padding-top: 35px;
   padding-left: 15px;
@@ -718,28 +559,23 @@ footer p {
   text-decoration: none;
   opacity: 0.7;
 }
-
 .fa:hover {
   opacity: 1;
   transform: scale(1.2);
   color: #0693ff;
 }
-
 .fa-facebook {
   background: transparent;
   color: white;
 }
-
 .fa-twitter {
   background: transparent;
   color: white;
 }
-
 .fa-instagram {
   background: transparent;
   color: white;
 }
-
 .fa-linkedin {
   background: transparent;
   color: white;
