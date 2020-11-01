@@ -54,7 +54,6 @@ body {
 }
 .nav-links li a:hover {
   color: #cbe2f4;
-  font-size: 21px;
 }
 a span {
   display: none;
