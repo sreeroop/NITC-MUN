@@ -1,4 +1,3 @@
-
 @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Poppins&display=swap");
 * {
@@ -24,7 +23,7 @@ body {
   left: 5%;
   top: 50%;
   transform: translate(-5%, -50%);
-  width: 30px;
+  height: 10vh;
   z-index: 3;
 }
 .nav-links {

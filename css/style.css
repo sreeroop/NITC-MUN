@@ -7,7 +7,7 @@ body {
   font-family: sans-serif;
 }
 #particles-js {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
   height: 115vh;
@@ -32,7 +32,7 @@ body {
   left: 5%;
   top: 50%;
   transform: translate(-5%, -50%);
-  width: 30px;
+  height: 10vh;
   z-index: 3;
 }
 .nav-links {
