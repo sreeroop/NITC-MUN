@@ -5,6 +5,7 @@
 }
 body {
   font-family: sans-serif;
+  cursor: default;
 }
 #particles-js {
   position: fixed;
