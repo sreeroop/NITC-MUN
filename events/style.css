@@ -1,0 +1,359 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Poppins&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: boarder-box;
+}
+body {
+  background-color: black;
+}
+#particles-js {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 115vh;
+  background-color: black;
+  background-image: url("");
+  background-size: cover;
+  background-position: 50% 50%;
+  z-index: -2;
+}
+.nav {
+  position: relative;
+  height: 15vh;
+  background: rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: space-between;
+}
+.nav img {
+  margin-left: 5px;
+  align-items: center;
+  position: absolute;
+  cursor: pointer;
+  left: 5%;
+  top: 50%;
+  transform: translate(-5%, -50%);
+  height: 10vh;
+  z-index: 3;
+}
+.nav-links {
+  display: flex;
+  list-style: none;
+  width: 50%;
+  height: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin-left: auto;
+}
+.nav-links li a {
+  color: white;
+  font-family: "Poppins", sans-serif;
+  font-weight: 800;
+  text-decoration: none;
+  font-size: 18px;
+}
+.nav-links li a:hover {
+  color: #cbe2f4;
+}
+a span {
+  display: none;
+}
+.hamburger {
+  display: none;
+}
+@media screen and (max-width: 768px) {
+  .nav {
+    position: relative;
+    align-items: center;
+    overflow: hidden;
+  }
+  .nav-links {
+    position: fixed;
+    background: rgba(21, 73, 115, 1);
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(100px at 90% -20%);
+    -webkit-clip-path: circle(100px at 90% -20%);
+    transition: all 1s ease-out;
+    pointer-events: none;
+    z-index: 2;
+  }
+  .nav-links.open {
+    clip-path: circle(1200px at 90% -10%);
+    -webkit-clip-path: circle(1200px at 90% -10%);
+    pointer-events: all;
+    overflow: hidden;
+  }
+  .landing {
+    flex-direction: column;
+  }
+  .hamburger {
+    position: absolute;
+    cursor: pointer;
+    right: 5%;
+    top: 50%;
+    transform: translate(-5%, -50%);
+    z-index: 3;
+  }
+  .menu {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    display: block;
+    padding: 0;
+  }
+  .line {
+    fill: none;
+    stroke: white;
+    stroke-width: 6;
+    transition: stroke-dasharray 600ms cubic-bezier(0.4, 0, 0.2, 1),
+      stroke-dashoffset 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .line1 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .line2 {
+    stroke-dasharray: 60 60;
+    stroke-width: 6;
+  }
+  .line3 {
+    stroke-dasharray: 60 207;
+    stroke-width: 6;
+  }
+  .opened .line1 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  .opened .line2 {
+    stroke-dasharray: 1 60;
+    stroke-dashoffset: -30;
+    stroke-width: 6;
+  }
+  .opened .line3 {
+    stroke-dasharray: 90 207;
+    stroke-dashoffset: -134;
+    stroke-width: 6;
+  }
+  .nav-links li {
+    list-style: none;
+    padding: 0 30px;
+    font-size: 4em;
+    overflow: hidden;
+  }
+  .nav-links li a {
+    position: relative;
+    color: rgba(255, 255, 255, 0.1);
+    text-decoration: none;
+    font-weight: 700;
+  }
+  .nav-links:hover li a:before {
+    animation: animate 1s steps(8) forwards;
+  }
+  @keyframes animate {
+    0% {
+      width: 281.5px;
+    }
+    100% {
+      width: 0px;
+    }
+  }
+  .nav-links li a:before {
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 13px;
+    overflow-y: hidden;
+    color: #1bfaad;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+  .nav-links li:hover span {
+    color: #ef0448;
+  }
+  li a span {
+    position: relative;
+    top: -2px;
+    left: -10px;
+    color: transparent;
+    display: initial;
+  }
+  .nav-links li:hover a:before {
+    animation: animateTwo 1s steps(8) forwards;
+  }
+  @keyframes animateTwo {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 281.5px;
+    }
+  }
+}
+.landing {
+  position: relative;
+  top: 0;
+  left: 0;
+}
+.announcement {
+  height: 60vh;
+}
+.landing h1 {
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 4rem;
+  color: rgba(21, 73, 115, 1);
+  margin-bottom: 5%;
+}
+.landing h2,
+h3 {
+  margin-left: 10%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 3%;
+  text-decoration: underline;
+}
+.landing h3 {
+  margin-left: 10%;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2.5rem;
+  color: #b8001a;
+  margin-bottom: 3%;
+  text-decoration: underline;
+}
+.landing p {
+  margin: auto;
+  max-width: 80%;
+  font-family: "Poppins", sans-serif;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  font-size: 1.3rem;
+  color: white;
+}
+.landing a {
+  text-decoration: none;
+  color: #b8001a;
+}
+.connect {
+  position: fixed;
+  left: 0;
+  top: 200px;
+  width: 70px;
+  height: 300px;
+  background-color: rgba(203, 226, 244, 0.6);
+  box-shadow: 1px 1px 1px 1px;
+  border-radius: 0 12px 12px 0;
+  transform: translate(-90%);
+  z-index: 4;
+}
+.connect p {
+  position: absolute;
+  left: 30px;
+  top: 155px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  transform: rotate(90deg);
+  font-weight: bold;
+  color: rgba(255, 255, 255, 0.3);
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 3px;
+}
+.connect:hover {
+  transform: translate(0%);
+}
+@media screen and (max-width: 1000px) {
+  .connect {
+    position: fixed;
+    left: 0;
+    top: 200px;
+    width: 55px;
+    height: 300px;
+    background-color: rgba(203, 226, 244, 0.6);
+    border-radius: 0 12px 12px 0;
+    transform: translate(-90%);
+    z-index: 4;
+  }
+  .connect p {
+    position: absolute;
+    left: 15px;
+    top: 150px;
+    display: flex;
+    font-weight: bold;
+    color: rgba(255, 255, 255, 0.3);
+  }
+  .connect:hover {
+    transform: translate(0%);
+    background-color: #154873;
+  }
+}
+.fa {
+  padding-top: 35px;
+  padding-left: 15px;
+  font-size: 30px;
+  width: 50px;
+  text-decoration: none;
+  opacity: 0.7;
+}
+.fa:hover {
+  opacity: 1;
+  transform: scale(1.2);
+  color: #0693ff;
+}
+.fa-facebook {
+  background: transparent;
+  color: white;
+}
+.fa-envelope-o {
+  background: transparent;
+  color: white;
+}
+.fa-instagram {
+  background: transparent;
+  color: white;
+}
+.fa-linkedin {
+  background: transparent;
+  color: white;
+}
+footer {
+  margin-top: 5%;
+  align-items: center;
+  background-color: transparent;
+}
+footer p {
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: bold;
+  font-family: "Monda", sans-serif;
+  color: #154873;
+}
+@media screen and (max-width: 500px) {
+  footer p {
+    font-size: 0.8rem;
+  }
+}
+.loader-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fcfcfc;
+  width: 100%;
+  height: 100%;
+  z-index: 10;
+}
+#logo {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 200px;
+  z-index: 20;
+}
+.load {
+  overflow: hidden;
+}
