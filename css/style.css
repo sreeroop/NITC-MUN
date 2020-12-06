@@ -387,7 +387,8 @@ section h2 {
 .main-pageContent h2 span {
   font-size: 5rem;
   font-weight: 700;
-  color: #b8001a;
+  color: white;
+  -webkit-text-stroke: 0.5px black;
 }
 .main-pageContent p {
   font-family: "Montserrat", sans-serif;
