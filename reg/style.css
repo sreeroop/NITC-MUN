@@ -196,6 +196,7 @@ a span {
   position: relative;
   top: 0;
   left: 0;
+  height: 60vh;
 }
 .announcement {
   height: 60vh;
@@ -205,8 +206,9 @@ a span {
   font-family: "Poppins", sans-serif;
   font-size: 4rem;
   color: rgba(21, 73, 115, 1);
-  margin-bottom: 5%;
+  margin-top: 10%;
 }
+
 .landing h2,
 h3 {
   margin-left: 10%;
@@ -321,7 +323,10 @@ h3 {
   color: white;
 }
 footer {
-  margin-top: 5%;
+  position: absolute;
+  bottom: 0%;
+  left: 50%;
+  transform: translateX(-50%);
   align-items: center;
   background-color: transparent;
 }
