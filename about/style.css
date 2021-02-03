@@ -215,16 +215,13 @@ a span {
   background-color: rgba(0, 0, 0, 0.5);
 }
 .slide:nth-child(1) {
-  background-image: url(IPF-PICS/lse@2x.png);
-}
-.slide:nth-child(2) {
   background-image: url(IPF-PICS/transparent\ bg-01.png);
 }
-.slide:nth-child(3) {
+.slide:nth-child(2) {
   background-image: url(./IPF-PICS/amc.jpg);
 }
 @media screen and (max-width: 790px) {
-  .slide:nth-child(3) {
+  .slide:nth-child(2) {
     background-image: url(./IPF-PICS/Amc\ 790x\ 590-1.png);
   }
 }
