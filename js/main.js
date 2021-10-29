@@ -67,8 +67,13 @@ function navCheck(entries) {
 sections.forEach((section) => {
   observer.observe(section);
 });
-setTimeout(function () {
+$("window").load(function() {
   $(".loader-wrapper").fadeOut();
   $("#logo").delay(150).fadeOut("slow");
-  $("body").removeClass("load");
-}, 2000);
+  $("body").removeClass("preload");
+});
+//setTimeout(function () {
+ // $(".loader-wrapper").fadeOut();
+ // $("#logo").delay(150).fadeOut("slow");
+ // $("body").removeClass("load");
+//}, 2000);
